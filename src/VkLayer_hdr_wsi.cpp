@@ -45,6 +45,17 @@ namespace HdrLayer
           .tf_named = XX_COLOR_MANAGER_V4_TRANSFER_FUNCTION_ST2084_PQ,
           .extended_volume = false,
       },
+      ColorDescription{
+        .surface = {
+            .surfaceFormat = {
+                VK_FORMAT_R16G16B16A16_SFLOAT,
+                VK_COLOR_SPACE_EXTENDED_SRGB_LINEAR_EXT,
+            }
+        },
+        .primaries_named = XX_COLOR_MANAGER_V4_PRIMARIES_SRGB,
+        .tf_named = XX_COLOR_MANAGER_V4_TRANSFER_FUNCTION_LINEAR, //FUNCTION_SCRGB_LINEAR,
+        .extended_volume = true,
+    },
 /*
       ColorDescription{
           .surface = {.surfaceFormat = {
